@@ -211,13 +211,15 @@ export function CreateAdModal() {
           </label>
 
           <footer className="mt-4 flex justify-end gap-4">
-            <button className="bg-zinc-500 px-5 h-12 rounded-md hover:bg-zinc-600">Cancelar</button>
+            <Dialog.Close className="bg-zinc-500 px-5 h-12 rounded-md hover:bg-zinc-600">
+              Cancelar
+            </Dialog.Close>
 
             <button
               type="submit"
               className="bg-violet-500 px-5 h-12 rounded-md flex items-center gap-3 hover:bg-violet-600"
             >
-              <GameController size={24} />
+              <GameController className="w-6 h-6" />
               Encontrar duo
             </button>
           </footer>
